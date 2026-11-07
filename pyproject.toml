@@ -1,0 +1,15 @@
+[project]
+name = "marsquake-mapcheck"
+version = "1.0.0"
+description = "A provenance-aware audit of InSight catalog coordinates"
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["pandas>=2.2,<3", "pyarrow>=18", "huggingface-hub>=0.28"]
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "ruff>=0.17.3",
+]
+[tool.pytest.ini_options]
+pythonpath = ["."]

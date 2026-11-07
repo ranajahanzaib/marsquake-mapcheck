@@ -1,0 +1,6 @@
+packages:
+  - web
+
+# Vite and Vitest require esbuild's platform binary during builds and tests.
+allowBuilds:
+  esbuild: true

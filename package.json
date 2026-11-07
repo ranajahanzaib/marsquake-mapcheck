@@ -1,0 +1,27 @@
+{
+  "name": "marsquake-mapcheck",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Audit placeholder coordinates in the InSight Marsquake catalog and compare naive with provenance-aware Mars maps.",
+  "license": "MIT",
+  "keywords": [
+    "marsquake",
+    "mars",
+    "insight-mission",
+    "scientific-data",
+    "data-quality",
+    "data-provenance",
+    "geospatial",
+    "react",
+    "python",
+    "open-science"
+  ],
+  "packageManager": "pnpm@12.3.4",
+  "scripts": {
+    "dev": "pnpm --filter mapcheck-web dev",
+    "build": "pnpm --filter mapcheck-web build",
+    "test": "pnpm --filter mapcheck-web test",
+    "typecheck": "pnpm --filter mapcheck-web typecheck",
+    "preview": "pnpm --filter mapcheck-web preview"
+  }
+}
