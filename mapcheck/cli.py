@@ -11,7 +11,8 @@ from .source import read_source, retrieve
 
 def main(argv=None):
     parser = argparse.ArgumentParser(
-        description="Audit InSight catalog coordinates; preserve provenance."
+        prog="mapcheck",
+        description="Audit InSight catalog coordinates; preserve provenance.",
     )
     commands = parser.add_subparsers(dest="command", required=True)
     for name in ("ingest", "audit"):
