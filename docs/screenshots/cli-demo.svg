@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 540" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181514" />
+      <stop offset="100%" stop-color="#0f0d0c" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <rect width="920" height="540" fill="transparent" />
+
+  <!-- Window Frame -->
+  <g filter="url(#shadow)">
+    <rect x="20" y="20" width="880" height="500" rx="10" fill="url(#bg)" stroke="#2f2b28" stroke-width="1" />
+  </g>
+
+  <!-- Title bar -->
+  <rect x="20" y="20" width="880" height="38" rx="10" fill="#201c1a" />
+  <rect x="20" y="48" width="880" height="10" fill="#201c1a" />
+  <line x1="20" y1="58" x2="900" y2="58" stroke="#2f2b28" stroke-width="1" />
+
+  <!-- Traffic lights -->
+  <circle cx="44" cy="39" r="6" fill="#ef4444" />
+  <circle cx="64" cy="39" r="6" fill="#f59e0b" />
+  <circle cx="84" cy="39" r="6" fill="#10b981" />
+
+  <!-- Title -->
+  <text x="460" y="44" fill="#8f8781" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" text-anchor="middle">
+    marsquake-mapcheck — uv run python -m mapcheck
+  </text>
+
+  <!-- Terminal Content -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12.5" line-height="1.5">
+    <!-- Command 1: help -->
+    <text x="42" y="90" fill="#9e958f">
+      <tspan fill="#d97706" font-weight="600">$</tspan>
+      <tspan fill="#f5f2ed" font-weight="500"> uv run python -m mapcheck --help</tspan>
+    </text>
+    <text x="42" y="112" fill="#8f8781">usage: mapcheck [-h] {ingest,audit} ...</text>
+    <text x="42" y="132" fill="#8f8781">Audit InSight catalog coordinates; preserve provenance.</text>
+    <text x="42" y="156" fill="#6e6761">positional arguments: {ingest,audit}</text>
+    <text x="42" y="174" fill="#6e6761">options: -h, --help show this help message and exit</text>
+
+    <!-- Command 2: ingest -->
+    <text x="42" y="214" fill="#9e958f">
+      <tspan fill="#d97706" font-weight="600">$</tspan>
+      <tspan fill="#f5f2ed" font-weight="500"> uv run python -m mapcheck ingest </tspan>
+    </text>
+    <text x="60" y="234" fill="#f5f2ed" font-weight="500">    --input data/source/insight_marsquakes.parquet </text>
+    <text x="60" y="254" fill="#f5f2ed" font-weight="500">    --revision 6a14e70827fe23f9b2e31609ddcecce9d3219de4</text>
+
+    <!-- Ingest Output -->
+    <text x="42" y="286" fill="#10b981" font-weight="600">Audited 2,715 records:</text>
+    <text x="42" y="306" fill="#b8aea6">
+      <tspan fill="#ef4444" font-weight="600">'PLACEHOLDER_LOCATION': 2,691</tspan>
+      <tspan fill="#6e6761"> (99.12%), </tspan>
+      <tspan fill="#3b82f6" font-weight="600">'NON_DEFAULT_LOCATION': 24</tspan>
+      <tspan fill="#6e6761"> (0.88%)</tspan>
+    </text>
+    <text x="42" y="326" fill="#8f8781">
+      <tspan fill="#6e6761">'MISSING_LOCATION': 0, 'INVALID_LOCATION': 0</tspan>
+    </text>
+    <text x="42" y="350" fill="#8f8781">
+      Reports: <tspan fill="#e5e0da">reports/</tspan>; duplicate IDs: <tspan fill="#10b981">0</tspan>; web data synced: <tspan fill="#e5e0da">web/public/data/</tspan>
+    </text>
+
+    <!-- Verification / summary -->
+    <text x="42" y="390" fill="#9e958f">
+      <tspan fill="#d97706" font-weight="600">$</tspan>
+      <tspan fill="#f5f2ed" font-weight="500"> uv run pytest -q &amp;&amp; pnpm test</tspan>
+    </text>
+    <text x="42" y="412" fill="#10b981">..........................                                [100%]</text>
+    <text x="42" y="430" fill="#10b981">26 passed in 0.76s</text>
+    <text x="42" y="450" fill="#10b981">✓ src/App.test.tsx (9 tests) 555ms</text>
+    <text x="42" y="470" fill="#10b981" font-weight="600">Test Files  1 passed (1)   |   Tests  9 passed (9)</text>
+
+    <!-- Cursor -->
+    <text x="42" y="500" fill="#d97706" font-weight="600">$ <tspan fill="#f5f2ed">▋</tspan></text>
+  </g>
+</svg>
