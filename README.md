@@ -224,9 +224,21 @@ The resulting `web/dist/` directory can be deployed directly to GitHub Pages, Cl
 
 ---
 
-## License & Attribution
+## Attribution
 
-- **Application & Engine Code:** [MIT License](LICENSE) © 2026 Marsquake MapCheck Contributors.
 - **Dataset:** [Julien Simon / InSight Marsquake Catalog](https://huggingface.co/datasets/juliensimon/insight-marsquake-catalog) ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)), derived from NASA InSight SEIS / Marsquake Service via IRIS (EarthScope).
 - **Basemap Imagery:** [USGS / NASA MGS MOLA Global Shaded Relief](https://astrogeology.usgs.gov/search/map/mars_mgs_mola_global_color_shaded_relief_463m) (Public Domain).
 - _Disclaimer: Independent scientific research tool. Not affiliated with or endorsed by NASA, JPL, USGS, or the Marsquake Service._
+
+
+## License & Custom Work
+
+[![Hire me](https://img.shields.io/badge/Open%20to%20work-work%40withrana.com-brightgreen)](mailto:work@withrana.com) [![LinkedIn](https://img.shields.io/badge/LinkedIn-workwithrana-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/workwithrana)
+[![Upwork](https://img.shields.io/badge/Upwork-Hire%20Me-14A800?style=flat&logo=upwork&logoColor=white)](https://www.upwork.com/freelancers/~01bbcf6edb91a8df5f)
+[![Contra](https://img.shields.io/badge/Contra-Hire%20Me-000000?style=flat)](https://contra.com/ranajahanzaib/)
+
+**License:** MIT, see [LICENSE](LICENSE). Free for personal and commercial use.
+
+**Author:** Rana Jahanzaib
+
+**Need this built for your stack?** Email me what you're working on: work@withrana.com
